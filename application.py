@@ -43,7 +43,7 @@ if not API_KEY:
     raise RuntimeError("API_KEY not set")
 
 
-@app.route("/")
+@app.route("/index")
 @login_required
 def index():
     """Show portfolio of stocks"""
